@@ -1,122 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FintechApp</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FintechApp</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    
+  <nav>
+    <div class="logo">
+      <span class="logo-icon">✦</span>
+      <h2>FintechApp</h2>
+    </div>
 
-    <nav>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Dashboard</a></li>
+      <li><a href="#">Transactions</a></li>
+      <li><a href="#">Cards</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
 
-        <div class="logo">
-            <span class="logo-icon">✦</span>
-            <h2>FintechApp</h2>
+    <div class="profile">👨</div>
+  </nav>
+
+  <main>
+    <div class="card">
+      <div class="success-icon">✓</div>
+
+      <h1>Transfer Sent Successfully!</h1>
+      <p class="subtitle">Your payment has been processed and is on its way.</p>
+
+      <div class="details-box">
+        <p class="amount-title">AMOUNT SENT</p>
+        <h2 class="amount">$1,250.00 <span>USD</span></h2>
+
+        <hr>
+
+        <div class="detail-row">
+          <span class="label">To Recipient</span>
+          <div class="recipient">
+            <strong class="name">Alex Thompson</strong>
+            <span class="icon-wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="recipient-icon">
+                <path d="M340-320h300q50 0 85-35t35-85q0-50-35-85t-85-35q-8-58-53-99t-101-41q-51 0-92.5 26T332-600q-57 5-94.5 43.5T200-460q0 58 41 99t99 41Zm0-80q-25 0-
+                42.5-17.5T280-460q0-25 17.5-42.5T340-520h60v-20q0-33 23.5-56.5T480-620q33 0 56.5 23.5T560-540v60h80q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400H340ZM48
+                0-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 1
+                56T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/>
+              </svg>
+            </span>
+          </div>
         </div>
 
-        <ul class="nav-links">
-            <li><a href="#" class="active">Dashboard</a></li>
-            <li><a href="#">Transactions</a></li>
-            <li><a href="#">Cards</a></li>
-            <li><a href="#">Settings</a></li>
-        </ul>
-
-        <div class="profile">
-            👨
+        <div class="detail-row">
+          <span class="label">Reference Number</span>
+          <div class="ref-info">
+            <strong>#TRF-992837465</strong>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="copy-icon">
+              <path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"/>
+            </svg>
+          </div>
         </div>
 
-    </nav>
-
-
-    
-    <main>
-
-        <div class="card">
-
-            <div class="success-icon">
-                ✓
-            </div>
-
-            <h1>Transfer Sent Successfully!</h1>
-
-            <p class="subtitle">
-                Your payment has been processed and is on its way.
-            </p>
-
-            
-
-            <div class="details-box">
-
-                <p class="amount-title">AMOUNT SENT</p>
-
-                <h2 class="amount">
-                    $1,250.00 <span>USD</span>
-                </h2>
-
-                <hr>
-
-                <div class="detail-row">
-                    <span>To Recipient</span>
-                    <strong>Alex Thompson</strong>
-                </div>
-
-                <div class="detail-row">
-                    <span>Reference Number</span>
-                    <strong>#TRF-992837465</strong>
-                </div>
-
-                <div class="detail-row">
-                    <span>Timestamp</span>
-                    <strong>Oct 24, 2023, 2:30 PM</strong>
-                </div>
-
-                <div class="detail-row">
-                    <span>Payment Method</span>
-                    <strong>Main Wallet (****4291)</strong>
-                </div>
-
-            </div>
-
-
-            <button class="send-btn">
-                Send Money Again
-            </button>
-
-
-            <div class="small-buttons">
-
-                <button>⬇ Receipt</button>
-
-                <button>🔗 Share</button>
-
-            </div>
-
-
-            <a href="#" class="back-link">
-                ← Back to Dashboard
-            </a>
-
+        <div class="detail-row">
+          <span class="label">Timestamp</span>
+          <strong>Oct 24, 2023, 14:30 PM</strong>
         </div>
 
-    </main>
+        <div class="detail-row">
+          <span class="label">Payment Method</span>
+          <div class="wallet-info">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="wallet-icon">
+              <path d="M200-200v-560 560Zm0 80q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v100h-80v-100H200v560h560v-100h80v100q0 33-23.5 56.5T760-120H200Zm320-160q-33 0-56.5-23.5T440-360v-240q0-33 23.5-56.5T520-680h280q33 0 56.5 23.5T880-600v240q0 33-23.5 56.5T800-280H520Zm280-80v-240H520v240h280Zm-117.5-77.5Q700-455 700-480t-17.5-42.5Q665-540 640-540t-42.5 17.5Q580-505 580-480t17.5 42.5Q615-420 640-420t42.5-17.5Z"/>
+            </svg>
+            <strong>Main Wallet (****4291)</strong>
+          </div>
+        </div>
+      </div>
 
+      <button class="send-btn">Send Money Again</button>
 
-    <footer>
+      <div class="small-buttons">
+        <button class="receipt-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="icon">
+            <path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/>
+          </svg>
+          Receipt
+        </button>
 
-        © 2023 FintechApp Inc. All transfers are subject to our
-        <a href="#">Terms of Service</a>
+        <button class="share-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="icon">
+            <path d="M680-80q-50 0-85-35t-35-85q0-6 3-28L282-392q-16 15-37 23.5t-45 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q24 0 45 8.5t37 23.5l281-164q-2-7-2.5-13.5T560-760q0-50 35-85t85-35t85 35t35 85q0 50-35 85t-85 35q-24 0-45-8.5T598-672L317-508q2 7 2.5 13.5t.5 14.5q0 8-.5 14.5T317-452l281 164q16-15 37-23.5t45-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Z"/>
+          </svg>
+          Share
+        </button>
+      </div>
 
-    </footer>
+      <a href="#" class="back-link">← Back to Dashboard</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2023 FintechApp Inc. All transfers are subject to our
+    <a href="#">Terms of Service</a>
+  </footer>
 
 </body>
-
 </html>
